@@ -1,0 +1,125 @@
+@charset "utf-8";
+/********** 自定义间距 ********************/
+.mt10{ margin-top: 10px;}
+.ml10{ margin-left: 10px;}
+.mr10{ margin-right: 10px;}
+.mb10{ margin-bottom: 10px;}
+
+.mt30{ margin-top: 30px;}
+.mt40{ margin-top: 40px;}
+/********** 自定义间距 ********************/
+
+
+/********** 自定义颜色 ********************/
+.c_ff0000{ color: #ff0000}
+
+/********** 自定义颜色 ********************/
+
+
+/********** 表格列表顶部工具栏样式 ********************/
+.btn_box{ text-align: right;}
+.button_box{ background: #e4e9f1;}
+.btn_border_none{ border:none; background: none;}
+/********** 表格列表顶部工具栏样式 ********************/
+
+/*****H自定义公共样式 LHW *****/
+.h-start:before{
+    content: '*';
+    color: #ff4949;
+    margin-right: 4px;
+}
+.h-row{width: 100%; position: relative;}
+ul,ol,li{ list-style:none; padding: 0; margin: 0;}
+.clearfix {zoom:1;}
+.clearfix:after { display:block; clear:both; content:"."; visibility:hidden; height:0; font-size:0;}
+.fl{ float: left;}
+.fr{ float: right;}
+
+
+
+/*重置样式跟input一致*/
+.el-textarea__inner{font-family: Arial;}
+.el-dialog--small{min-width: 800px!important;}
+
+
+/*home主页*/
+#h-home{width: 100%; position: relative; min-width: 1000px;}
+#h-home .h-homeBox{ width: 100%; background: #fff;  position: relative;  margin-bottom: 25px;}
+#h-home .h-homeBox .h-border{border: 1px dotted #eee; padding: 15px;}
+#h-home .h-homeBox .h-title{font-size: 16px; color:#1c8de0;margin: 0; padding: 0; margin-bottom: 15px; position: relative;}
+#h-home .h-homeBox .h-title .refresh{display: block; position: absolute; top: 2px; right: 5px; font-size: 14px; background: url("../../static/images/refresh.png") 0 0 no-repeat; padding-left:30px; cursor: pointer;color: #888;}
+.bg-purple{background: #eee;}
+.h-iconItem{height: 120px;}
+#h-home .h-homeBox .h-title .refresh:hover{color:#1c8de0;}
+
+#h-home .h-homeBox .h-operation{padding: 15px; }
+#h-home .h-home-ul{margin: 0; padding: 0; list-style: none; background-color: #F5F8FC; border: 1px solid #E5EEFD; overflow: hidden; clear: both; padding: 20px;}
+#h-home .h-home-li{float: left; width: 33%; text-align: center; border-right: 1px solid #E5EEFD;     margin: 10px 0;}
+#h-home li.h-home-li:last-child{border-right:none;}
+#h-home .h-home-pNum{color: #1c8de0; font-size: 45px; font-family: Arial;}
+#h-home .h-home-pName{font-size: 16px;}
+#h-home .bg-purple1{background-color: #199ed8;}
+#h-home .bg-purple2{background-color: #65cea7;}
+#h-home .bg-purple3{background-color: #fc8675;}
+#h-home .bg-purple4{background-color: #ebc85e;}
+#h-home .h-iconItem,#h-home .h-iconItem a{color: #f8f8f8; text-align: center; font-size: 16px; position: relative; }
+#h-home .h-iconItem a{text-decoration: none; display: block;}
+#h-home .h-iconItem a:hover{ color: #fff;}
+#h-home .h-iconItem a:hover p{text-decoration: underline;}
+#h-home .h-iconItem .name{font-size: 35px; padding-top: 10px; display: block; height: 60px;}
+#h-home .h-iconItem p{padding: 0; margin: 0;}
+#h-home .h-iconItem p.pName{height: 46px; line-height:46px; text-align: left; padding-left: 10px;}
+#h-home .h-iconItem span.bg{padding: 0; margin: 0; display: block; width: 84px; height: 78px; position: absolute; right: 10px; top: 20px;}
+#h-home .bg-purple1 span.bg{background: url("../../static/images/home-icon1.png") 0 0 no-repeat;}
+#h-home .bg-purple2 span.bg{background: url("../../static/images/home-icon2.png") 0 0 no-repeat;}
+#h-home .bg-purple3 span.bg{background: url("../../static/images/home-icon3.png") 0 0 no-repeat;}
+#h-home .bg-purple4 span.bg{background: url("../../static/images/home-icon4.png") 0 0 no-repeat;}
+
+#mainChartFilters{position: relative; overflow: hidden; width: 100%; clear: both;}
+#mainChartTime{float: right; margin-right: 240px;}
+#mainChartFilters .data{width: 150px; position: absolute; right: 73px; top: 0;}
+
+/*产品条件*/
+#h-mainChart-bar{position: absolute; width: 150px; top: 70px; right: -10px;}
+#h-mainChart-bar ul{padding: 0; margin: 0; list-style: none;}
+#h-mainChart-bar li.h-home-list{height: 25px; line-height: 25px; position: relative; padding-left: 35px; margin-bottom: 10px; cursor: pointer; overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;}
+#h-mainChart-bar li.h-home-list .h-bg{width: 30px; height: 18px; position: absolute; top: 2px; left: 0;}
+
+/*tableData: ["#199ed8","#65cea7","#fc8675","#ebc85e","#ba3b28","#2e4652","#619faa","#bea296","#707173","#98c3b0"],*/
+.bg0,.h-bg[data-class="0"]{background-color:#199ed8;}
+.bg1,.h-bg[data-class="1"]{background-color:#65cea7;}
+.bg2,.h-bg[data-class="2"]{background-color:#fc8675;}
+.bg3,.h-bg[data-class="3"]{background-color:#ebc85e;}
+.bg4,.h-bg[data-class="4"]{background-color:#ba3b28;}
+.bg5,.h-bg[data-class="5"]{background-color:#2e4652;}
+.bg6,.h-bg[data-class="6"]{background-color:#619faa;}
+.bg7,.h-bg[data-class="7"]{background-color:#bea296;}
+.bg8,.h-bg[data-class="8"]{background-color:#707173;}
+.bg9,.h-bg[data-class="9"]{background-color:#98c3b0;}
+
+#h-mainChart-bar li.h-home-list .h-bg{background-color: #f3f3f3;}
+#h-mainChart-bar li.h-home-list .h-bg.active{background-color: #199ed8;}
+
+/*首页图表1查询*/
+#mainChartFilters{ position: absolute; top: 0; right: 180px; z-index: 999;}
+@media screen and (max-width: 1366px) {
+   #mainChartFilters{  right: 50px;}
+   #h-mainChart-bar{right: -20px;}
+}
+@media screen and (max-width: 1600px) {
+    #mainChartFilters{  right: 50px;}
+    #h-mainChart-bar{right: -20px;}
+}
+@media screen and (min-width: 1800px) {
+    #h-mainChart-bar{right: -10px;}
+}
+
+/*风控汇总*/
+.risk-box{position: relative; width: 100%; border-bottom: 1px solid #ddd;}
+.risk-box .riskItem{ position: relative; padding-left: 65px; height: 90px; overflow: hidden;}
+.risk-box .riskIcon{width: 65px; position: absolute; left: 0; top: 0px;}
+.risk-box .pName{ margin: 0; padding: 0; height: 35px; line-height: 35px; color: #666;}
+.risk-box .name{font-size: 20px; height: 55px; color: #333;}
+
